@@ -4,10 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeiro GitHub Page</title>
+    <title>Física</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Criação do GitHub Page</h1>
-    <p>Primeiro parágrafo</p>
+  <img src="Imagens/Setinha.png" alt="seta" button id="btnvoltar" class="botaoimg" style="width: 68px; cursor:pointer;">Voltar ao topo</button>
+    <header class="header" id="myHeader">
+        <nav class="navbar">
+        <a href="index.html" style="margin-left: 1265px; color: white;">Início</a>
+        <a href="usos.html" >Usos</a>
+        <a href="explicacoes.html">Explicações</a>
+        </nav>
+ 
+    </header>
+    <div class="container">
+        <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime optio fugiat maiores corporis odio voluptates id repellat unde deserunt quisquam, cupiditate culpa harum doloribus necessitatibus quidem voluptatibus sit adipisci. Nulla?</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae maiores eaque rem laudantium delectus repellendus sequi repudiandae exercitationem amet. Vel autem laboriosam excepturi molestiae ut, eveniet ratione ab eius repellendus.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae maiores eaque rem laudantium delectus repellendus sequi repudiandae exercitationem amet. Vel autem laboriosam excepturi molestiae ut, eveniet ratione ab eius repellendus.</h1>
+    </div>
+
+    <br>
+    <hr>
+    <span style="margin-left: 47%; color: white; font-size: 10pt;">Matheus Gaspar</span>
+    <script>
+        const voltar = document.querySelector("#btnvoltar");
+
+        voltar.addEventListener("click", function() {
+          window.scrollTo(0, 0);
+        });
+
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("myHeader");
+        var sair = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sair) {
+            header.classList.add("sair");
+          } else {
+            header.classList.remove("sair");
+          }
+        }
+        </script>
 </body>
 </html>
