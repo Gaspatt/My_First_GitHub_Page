@@ -1,0 +1,8 @@
+h1 {
+    color: rgb(60, 14, 104);
+    text-shadow: 1px 4px 1px black 1px 4px 10px;
+}
+ul {
+    font-size: 15pt;
+    background-color: gainsboro;
+}
